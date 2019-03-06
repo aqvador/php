@@ -71,10 +71,19 @@ for ($i = 1; $i <= 5; $i++) {
 }
 // 8.
 function task_8($arr){
+	echo 'Первый вариант:<br>';
 		foreach($arr as $key => $value) {
 				foreach($value as $row) {
 						if (mb_substr($row, 0, 1) == 'К') {
-								echo $row . '<br />';
+								echo $row . '<br>';
+						}
+				}
+		}
+	echo 'Второй вариант:<br>';
+	foreach($arr as $key => $value) {
+				foreach($value as $row) {
+						if ($row[1] == 'К') {
+								echo $row . '<br>';
 						}
 				}
 		}
