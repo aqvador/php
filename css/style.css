@@ -1,0 +1,70 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+  box-sizing: border-box;
+}
+
+body { 
+  text-align: center; 
+} 
+a {
+   text-decoration: none; 
+} 
+img { 
+  margin: 1px; 
+  opacity: 0;
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photo {
+  width: 250px;
+  height: 200px;
+  margin: 13px;
+  background: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  border-radius: 20px;
+  box-shadow: -1px 0px 15px 5px #00000080;
+  
+
+}
+
+.photo a {
+  display: inline-block;
+  width: 250px;
+  height: 200px;
+}
+
+.photo  input {
+  position: absolute;
+  display: none;
+  height: 50px;
+  color: #fff; 
+  text-decoration: none; 
+  padding: .5em 1.5em; 
+  border-radius: 0 0  20px 20px;
+  transition: all .8s;
+  background: rgba(56, 66, 212, 0.397); 
+  font-size: 20px;
+  font-weight: 900;
+  
+}
+
+.photo:hover input {
+  display: inline-block; 
+  width: 250px;
+  cursor: url(../icon/lup.png), cell;
+  
+}
+.photo input:hover {
+  background: rgba(56, 66, 212, 0.774);
+}
