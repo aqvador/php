@@ -68,7 +68,7 @@ echo $content;
 <script type="text/javascript">
 $('body').flipLightBox({
     
-	lightbox_flip_speed: 1000, 
+	lightbox_flip_speed: 500, 
 	lightbox_border_color: '#666'
     
 })
