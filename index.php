@@ -52,8 +52,9 @@ if (!empty($photos)) {
 	foreach($photos as $photo) {
 		$file = 'img/' . $photo;
 		$content.= '<div class="photo"  style="background-image: url(' . $file . ')">
-                <a href="' . $file . '" class="flipLightBox">
-               <span></span></a> 
+                <a href="' . $file . '" class="flipLightBox" data-lightbox="imagegroup">
+			   <span><b> Картинка'.$link.'</b> <br>
+			   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, maxime.</span></a> 
                 <input type="submit" value="Удалить" name="delete,' . pathinfo($photo, PATHINFO_FILENAME) . '" form="upload"> 
                 </div>';
 		$link++;
@@ -67,8 +68,8 @@ echo $content;
 <script type="text/javascript">
 $('body').flipLightBox({
     
-    lightbox_text_status: 0,
-    lightbox_navigation_status: 0
+	lightbox_flip_speed: 1000, 
+	lightbox_border_color: '#666'
     
 })
 </script>
