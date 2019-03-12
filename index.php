@@ -19,9 +19,7 @@ if ($_POST['upload'] == 'Отправить') {
 	// если есть переменная то значит нажата кнопка отправить. проверяем файлы
 	require 'function/function.php';
 	$files = upload_in_array();
-	if ($files[0]['error'] == '4') {
-	}
-	else {
+	if ($files[0]['error'] != '4') {
 		$path = 'img/';
 		$accept_type = array(
 			'image/jpeg',
