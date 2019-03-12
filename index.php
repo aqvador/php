@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>LESSON_4</title>
-<title>Загрузка фото</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,7 +18,6 @@
 if ($_POST['upload'] == 'Отправить') {
 	// если есть переменная то значит нажата кнопка отправить. проверяем файлы
 	require 'function/function.php';
-
 	$files = upload_in_array();
 	if ($files[0]['error'] == '4') {
 	}
@@ -43,8 +41,7 @@ foreach($_POST as $key => $value) {
 	break;
 }
 if (substr($key, 0, 6) == 'delete') {
-	$del = explode(",", $key);
-	exec('rm img/' . $del[1] . '*');
+	exec('rm img/' . explode(",", $key)[1] . '*');
 }
 $photos = array_diff(scandir('img/') , array(
 	'..',
@@ -70,7 +67,6 @@ echo $content;
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script type="text/javascript" src="css/fliplightbox.min.js"></script>
 <script type="text/javascript">
-
 $('body').flipLightBox({
     
     lightbox_text_status: 0,
