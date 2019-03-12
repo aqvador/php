@@ -42,8 +42,7 @@ foreach($_POST as $key => $value) {
 	break;
 }
 if (substr($key, 0, 6) == 'delete') {
-	$del = explode(",", $key);
-	exec('rm img/' . $del[1] . '*');
+	exec('rm img/' . explode(",", $key)[1] . '*');
 }
 $photos = array_diff(scandir('img/') , array(
 	'..',
