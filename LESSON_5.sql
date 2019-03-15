@@ -29,19 +29,7 @@ INSERT INTO `photo` (`id`, `url_photo`, `views`) VALUES
 	(779, '130039915618nevseoboicomua.jpeg', 55),
 	(780, 'platedevushkavvodeprirodareka.jpg', 21),
 	(781, 'ulibaetsyadenizmilaniorig.jpg', 20),
-	(782, 'krasivaiadevushkavkrasnompricheskamakiiazhportretsad.jpg', 18),
-	(783, 'nastolcomua225898.jpg', 16),
-	(784, 'nastolcomua220083.jpg', 15),
-	(785, 'nastolcomua221886.jpg', 14),
-	(786, 'devushkaspinanebo.jpg', 15),
-	(787, 'lookcomua166922.jpg', 65),
-	(788, 'meganfoksmeganfox1412.jpg', 54),
-	(789, 'lookcomua134270.jpg', 7),
-	(790, 'lookcomua153933.jpg', 45),
-	(791, 'halleberryholiberiulybka.jpg', 12),
-	(792, '298776svetik.jpg', 54),
-	(793, 'lookcomua216423.jpg', 21),
-	(794, 'lookcomua176026.jpg', 19);
+	(782, 'krasivaiadevushkavkrasnompricheskamakiiazhportretsad.jpg', 18);
 /*!40000 ALTER TABLE `photo` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
