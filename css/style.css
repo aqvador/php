@@ -11,10 +11,7 @@ body {
 a {
    text-decoration: none; 
 } 
-img { 
-  margin: 1px; 
-  opacity: 0;
-}
+
 
 .photos {
   display: flex;
@@ -46,7 +43,7 @@ img {
 
 .photo  input {
   position: absolute;
-  display: none;
+  opacity:0;
   height: 50px;
   color: #fff; 
   text-decoration: none; 
@@ -60,11 +57,13 @@ img {
 }
 
 .photo:hover input {
-  display: inline-block; 
+  transition: all .8s;
   width: 250px;
   cursor: url(../icon/lup.png), cell;
   
 }
 .photo input:hover {
+
+  transition: all .8s;
   background: rgba(56, 66, 212, 0.774);
 }
