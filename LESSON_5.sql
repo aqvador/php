@@ -18,17 +18,30 @@ CREATE TABLE IF NOT EXISTS `photo` (
   `views` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `url_photo` (`url_photo`)
-) ENGINE=InnoDB AUTO_INCREMENT=565 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=795 DEFAULT CHARSET=utf8;
 
--- Дамп данных таблицы personal.photo: ~6 rows (приблизительно)
+-- Дамп данных таблицы personal.photo: ~19 rows (приблизительно)
 /*!40000 ALTER TABLE `photo` DISABLE KEYS */;
 INSERT INTO `photo` (`id`, `url_photo`, `views`) VALUES
-	(553, '1437940894971867398.jpg', 0),
-	(556, 'maxresdefault.jpg', 0),
-	(558, 'images2.jpeg', 0),
-	(559, 'images.jpeg', 0),
-	(560, '113918square250.jpg', 0),
-	(563, '11small.jpg', 0);
+	(776, '0285.jpg', 20),
+	(777, '1501852608cutegirls20170804000626011.jpg', 14),
+	(778, 'nastolcomua219310.jpg', 54),
+	(779, '130039915618nevseoboicomua.jpeg', 55),
+	(780, 'platedevushkavvodeprirodareka.jpg', 21),
+	(781, 'ulibaetsyadenizmilaniorig.jpg', 20),
+	(782, 'krasivaiadevushkavkrasnompricheskamakiiazhportretsad.jpg', 18),
+	(783, 'nastolcomua225898.jpg', 16),
+	(784, 'nastolcomua220083.jpg', 15),
+	(785, 'nastolcomua221886.jpg', 14),
+	(786, 'devushkaspinanebo.jpg', 15),
+	(787, 'lookcomua166922.jpg', 65),
+	(788, 'meganfoksmeganfox1412.jpg', 54),
+	(789, 'lookcomua134270.jpg', 7),
+	(790, 'lookcomua153933.jpg', 45),
+	(791, 'halleberryholiberiulybka.jpg', 12),
+	(792, '298776svetik.jpg', 54),
+	(793, 'lookcomua216423.jpg', 21),
+	(794, 'lookcomua176026.jpg', 19);
 /*!40000 ALTER TABLE `photo` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

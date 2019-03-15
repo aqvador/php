@@ -34,7 +34,6 @@ if ($_POST['upload'] == 'Загрузить') {
 				move_uploaded_file($value['tmp_name'], $save_file);
 				$resize = explode('/', $save_file);
 				$res= resize_photo($path.'small/', $f_name, $value['size'],$value['type'],$value['tmp_name']);
-				echo $res;
 				$upload = "INSERT INTO `photo` (`url_photo`, `views`) VALUES ('$f_name', 0)";
 				//echo $upload;
 				$omysqli->query($upload);

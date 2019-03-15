@@ -67,12 +67,7 @@ function user_browser($agent) {
 function resize_photo($path,$filename,$filesize,$type,$tmp_name){
     $quality = 60; //Качество в процентах. В данном случае будет сохранено 60% от начального качества.
     $size = 10485760; //Максимальный размер файла в байтах. В данном случае приблизительно 10 МБ.
-    echo 'Пусть=  '. $path. '<br>';
-    echo 'filename=  '. $filename. '<br>';
-    echo 'filesize=  '. $filesize. '<br>';
-    echo 'type=  '. $type. '<br>';
-    echo 'tmp_name=  '. $tmp_name. '<br>';
-    exec('touch '.$path.'test2.php');
+
     if($filesize<$size){
         switch($type){
             case 'image/jpeg': $source = imagecreatefromjpeg($tmp_name); break; //Создаём изображения по
@@ -82,8 +77,7 @@ function resize_photo($path,$filename,$filesize,$type,$tmp_name){
         }
         echo $source;
         imagejpeg($source, $path.$filename, $quality); //Сохраняем созданное изображение по указанному пути в формате jpg
-        imagedestroy($source);//Чистим память
-        return 'true';  
+        imagedestroy($source);//Чистим память 
     }
 }
 
