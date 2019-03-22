@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Jura');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700');
+
+
+.comments form {
+    margin: 0 auto;
+    display: flex;
+    width: 700px;
+    flex-direction: column;
+  }
+  
+  .textarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .comments form h4 {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .comments textarea {
+    height: 120px;
+    resize: none;
+    border: 2px solid transparent;
+    border-image: linear-gradient(40deg, #69c2d8 0%, #69c2d8 40%, rgb(237, 239, 241) 60%);
+    background: rgb(237, 239, 241);
+    border-image-slice: 1;
+    font-size: 25px;
+    padding: 10px;
+    font-family: 'Jura';
+    box-shadow: 1px 1px 3px 1px rgba(36, 45, 110, 0.89);
+  }
+  
+  .comments form input[type="text"],
+  .comments form input[name="count"] {
+    border: 2px solid transparent;
+    border-image: linear-gradient(40deg, #69c2d8 0%, #69c2d8 40%, rgb(237, 239, 241) 60%);
+    background: rgb(237, 239, 241);
+    border-image-slice: 1;
+    font-family: 'Jura';
+    font-size: 18px;
+    height: 32px;
+    padding: 10px;
+    box-shadow: 1px 1px 3px 1px rgba(36, 45, 110, 0.89);
+  
+  }
+  
+  .submit {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+   background: cadetblue;
+    font-family: 'Jura';
+    transition: all .3s;
+    font-size: 15px;
+    color: #000;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 2px 2px 10px 1px rgba(36, 45, 110, 0.89);
+  
+  }
+  
+  .submit:hover {
+    background-color: #168f8b;
+  }
+  
+  .submit:active {
+    transform: scaleX(1.1) scaleY(1.1);
+  }
+  
+  .answer_comm {
+    width: 90%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    transition: all .5s;
+  
+  }
+  
+  .your_comments {
+    display: block;
+    text-align: center;
+    font-family: sans-serif;
+    color: rgb(92, 79, 79);
+    margin-top: 30px;
+  }
+  
+  .comm {
+    margin: 0 auto;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 1px 1px 3px 1px rgba(36, 45, 110, 0.89);
+    transition: all .5s;
+  }
+  
+  .comm * {
+    font-family: 'Jura';
+  }
+  
+  .name_comment {
+    font-size: 30px;
+  }
+  
+  .date_comment {
+    font-size: 10px;
+  }
+
+
+  @media all and (max-width: 750px) {
+    .comments form {
+      width: 90%;
+    }   
+  }
