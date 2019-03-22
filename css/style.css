@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Germania+One');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    height: 100%;
+}
+
+.sasisaful {
+    /* display: none; */
+    position: fixed;
+    top: 0;
+    right: 35%;
+    width: 150px;
+    height: 50px;
+    transition: all .8s;
+    background: rgb(25, 110, 39);
+    line-height: 50px;
+    text-align: center;
+    opacity: 0;
+    -moz-border-radius-bottomright: 30px;
+    -webkit-border-bottom-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    -moz-border-radius-bottomleft: 30px;
+    -webkit-border-bottom-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    z-index: 1000;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+}
+
+/* .sasisaful:hover {
+    opacity: 0;
+} */
+
+.basket {
+    opacity: 1;
+    position: fixed;
+    transition: all .8s;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    left: 10px;
+}
+
+.basket img {
+    width: 55px;
+    height: 55px;
+}
+
+.basket p {
+    position: absolute;
+    left: 80%;
+    top: 30%;
+    color: forestgreen;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cintain_bask {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cintain_bask h1 {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.good_item p {
+    font-size: 25px;
+    /* font-weight: 700; */
+    font-family: 'Germania One', cursive;
+}
+
+.name_hr {
+    height: 3px;
+    background: rgb(81, 98, 145);
+}
+
+.names_basket {
+    display: flex;
+}
+
+.names_basket p {
+    display: block;
+    text-align: center;
+}
+
+.good_item {
+    border-radius: 30px;
+    display: flex;
+    background-color: rgb(241, 233, 233);
+    margin: 12px 0;
+    transition: all 1s;
+    opacity: 1;
+}
+
+.names_basket p:nth-child(1),
+.good_item-1:nth-child(1) {
+    width: 50%;
+}
+
+.names_basket p:nth-child(2),
+.good_item-2:nth-child(2) {
+    width: 16.66%;
+}
+
+.names_basket p:nth-child(3),
+.good_item-3:nth-child(3) {
+    width: 16.66%;
+}
+
+.names_basket p:nth-child(4),
+.good_item-4:nth-child(4) {
+    width: 16.66%;
+}
+
+.good_item div {
+
+    /* border: 1px solid black; */
+}
+
+.good_item-1 {
+    display: flex;
+    align-items: center;
+}
+
+.good_item-1 img {
+    height: 145px;
+}
+
+.good_item-1 h4 a {
+    padding-left: 5px;
+    color: rgb(117, 103, 103);
+}
+
+.good_item-2,
+.good_item-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.delete_goods {
+    width: 110px;
+    height: 25px;
+    margin-top: 20px;
+    background: rgb(91, 97, 129);
+    border-radius: 20px;
+    border: none;
+
+}
+
+.plus_minus button {
+    background: rgb(91, 97, 129);
+    width: 110px;
+    font-size: 25px;
+    border-radius: 20px;
+    border: none;
+}
+
+.good_item-3 input {
+    border: none;
+    border-radius: 20px;
+    width: 110px;
+    text-align: center;
+    color: rgb(17, 15, 15);
+}
+.good_item-3 button:hover {
+    background: rgb(73, 79, 112);
+}
+.good_item-3 button:active {
+    background: rgb(59, 63, 90);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    /* Firefox */
+}
+
+.total_price {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.total_price p {
+    font-size: 30px;
+    /* font-weight: 700; */
+    font-family: 'Germania One', cursive;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    background-color: rgb(58, 57, 57);
+    align-items: center;
+
+}
+
+.footer * {
+    color: #fff;
+    font-weight: 500;
+
+}
+
+.footer *:hover {
+    color: rgb(168, 158, 158);
+}
